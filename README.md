@@ -1,4 +1,4 @@
-# Task for ContextVision
+# Assignment from ContextVision
 
 A simple media player and adjustable filter created in Visual Studio 2017 using the GStreamer library.
 ## Getting started
