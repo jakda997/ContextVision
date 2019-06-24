@@ -271,7 +271,7 @@ float gaussian1d(float sigma, int x)
 }
 
 /* 
- *	Computes the 2D convolution of the image and the kernel. This funcition only
+ *	Computes the 2D convolution of the image and the kernel. This function only
  *	works for separable kernels, as is the case with the gaussian kernel.
  */
 static void xyconvolution(float * preimage, float * postimage, float * kernel, int kernelsize, int width, int height, float weight)
