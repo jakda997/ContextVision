@@ -286,12 +286,9 @@ static void xyconvolution(float * preimage, float * postimage, float * kernel, i
 		for (int x = kernelradius; x < width - kernelradius; ++x)
 		{
 			tmp = 0;
-			if (x >= kernelradius && x < width - kernelradius)
+			for (int k = 0; k < kernelsize; ++k)
 			{
-				for (int k = 0; k < kernelsize; ++k)
-				{
-					tmp += (preimage[y*width + x + k - kernelradius] * kernel[k]);
-				}
+				tmp += (preimage[y*width + x + k - kernelradius] * kernel[k]);
 			}
 			tempimage[y*width + x] = tmp / weight;
 		}
