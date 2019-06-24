@@ -1,5 +1,5 @@
 /* GStreamer
-* Copyright (C) 2019 Jakob <fixme@example.com>
+* Copyright (C) 2019 Jakob 
 *
 * This library is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Library General Public
@@ -352,7 +352,7 @@ static void gst_blur_filter_convolution(GstBlurFilter * blurfilter, GstVideoFram
 	/* Get sigma value for the gaussian function */
 	float sigma = blurfilter->sigma;
 	int filtering = blurfilter->filtering;
-	/* The kernel size is set to four times sigma plus 1 */
+	/* The kernel size is set to four times sigma plus one */
 	int kernelradius = 2 * sigma;
 	int kernelsize = 2 * kernelradius + 1;
 	float kernelweight = 0;
